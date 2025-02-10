@@ -1,7 +1,7 @@
 import axios from "axios";
 import { Movie } from "./types";
 
-const API_KEY = "YOUR_API_KEY";
+const API_KEY = import.meta.env.VITE_API_KEY;
 const BASE_URL = "https://api.kinopoisk.dev";
 
 export const fetchPopularMovies = async (): Promise<Movie[] | undefined> => {

@@ -1,0 +1,46 @@
+.container {
+  padding: 20px;
+}
+
+.title {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.details {
+  display: flex;
+  gap: 20px;
+  color: #fff;
+}
+
+.poster {
+  display: flex;
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+
+.info {
+  max-width: 600px;
+}
+
+.loading,
+.error {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 50px;
+}
+.noPoster {
+  display: flex;
+  background-color: #646464;
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}

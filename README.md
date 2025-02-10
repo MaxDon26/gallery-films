@@ -1,50 +1,66 @@
-# React + TypeScript + Vite
+# 🎬 Gallery Films  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Gallery Films** — это веб-приложение для просмотра фильмов с использованием данных из **Kinopoisk API**. Проект создан на **React** с использованием **TypeScript**, **Zustand** для управления состоянием и **Tanstack Query** для работы с асинхронными данными.  
 
-Currently, two official plugins are available:
+## 🛠 Стек технологий  
+- **React** — библиотека для создания пользовательских интерфейсов  
+- **TypeScript** — типизация и улучшенная поддержка разработки  
+- **Zustand** — управление состоянием приложения  
+- **Tanstack Query (React Query)** — управление запросами к API и кеширование данных  
+- **Kinopoisk API** — источник данных о фильмах и сериалах  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📦 Установка и запуск  
 
-## Expanding the ESLint configuration
+1. **Склонируйте репозиторий:**  
+   ```bash
+   git clone https://github.com/MaxDon26/gallery-films.git
+   cd gallery-films
+   ```
+2. **Установите зависимости:**  
+   ```bash
+   npm install
+   ```
+3. **Создайте `.env` файл:**  
+   Добавьте ваш API ключ для **Kinopoisk API**:  
+   ```
+   VITE_API_KEY=ваш_ключ_API
+   ```
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+4. **Запустите приложение:**  
+   ```bash
+   npm start
+   ```
 
-- Configure the top-level `parserOptions` property like this:
+5. Приложение будет доступно по адресу: [http://localhost:5173](http://localhost:5173)
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 📁 Структура проекта  
+
+```
+/src
+  ├── app        # Основные компоненты приложения
+  ├── entities   # Компоненты и модули для работы с данными
+  ├── features   # Реализация бизнес-логики и работа с API
+  ├── shared     # Общие утилиты, константы и вспомогательные функции
+  └── pages      # Страницы приложения
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## 🔑 Основные возможности  
+- Поиск фильмов и сериалов  
+- Просмотр подробной информации о фильме  
+- Кеширование запросов к API с помощью **Tanstack Query**  
+- Управление состоянием через **Zustand**  
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## 📸 Скриншоты  
+(Добавьте сюда скриншоты вашего приложения)
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## 📌 Планы по доработке  
+- Добавить функционал избранного  
+- Реализовать пагинацию  
+- Улучшить SEO и производительность  
+
+## 🤝 Контакты  
+Если у вас есть вопросы или предложения, напишите мне:  
+- **GitHub:** [MaxDon26](https://github.com/MaxDon26)  
+
+---
+
